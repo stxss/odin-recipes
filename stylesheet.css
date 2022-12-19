@@ -11,38 +11,122 @@ h1 {
     font-size: 48px;
 }
 
+ul {
+    width: 1290px;
+    height: 490px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
 .recipe_list {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 650px;
+
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    padding-bottom: 10px;
+
+    width: 1300px;
+    height: 500px;
+    
     font-size: 20px;
     text-align: center;
-
 }
 
 .recipe {
     flex-direction: column;
     display: flex;
     float: left;
-    width: 33.33%;
+    /* width: 33.33%; */
     padding: 5px;
     gap: 10px;
     align-items: center;
     width: 400px;
+    height: 450px;
     text-align: center;
+    transition: width 2s, height 2s;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+p {
+    margin: 0px;
+}
+
+
+.recipe_list:not(:hover){
+    transform: scale(1,1);
+    transition: all 1s ease-in-out;
 
 }
 
-/* #borscht {
-    text-align: left;
-    
-}
+#guacamole.recipe:hover ~ .recipe{
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+} 
 
-#guacamole {
-    text-align: center;
-}
+#borscht.recipe:hover ~ .recipe{
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+} 
 
-#margarita {
-    text-align: right;
+#margarita.recipe:hover ~ .recipe{
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+
+} 
+
+/* .recipe_list:hover .recipe {
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+
 } */
+
+.recipe:not(:hover) {
+    transform: scale(1,1);
+    transition: all 0.8s ease-in-out;
+
+} 
+
+#guacamole.recipe:hover {
+    transform: scale(1.2,1.2);
+    transition: all 1s ease-in-out;
+    filter: blur(0);
+} 
+
+#borscht.recipe:hover {
+    transform: scale(1.2,1.2);
+    transition: all 1s ease-in-out;
+    filter: blur(0);
+} 
+
+#margarita.recipe:hover {
+    transform: scale(1.2,1.2);
+    transition: all 1s ease-in-out;
+    filter: blur(0);
+} 
+
+.recipe_list:hover .recipe {
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+    filter: blur(8px)
+}
+
+
+
+
