@@ -5,15 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>    <title>Document</title>
 </head>
 <body>
     <h1>Odin Recipes by @stxss</h1>
-    <ul>
-        <li><a href="./recipes/borscht.html">A real Ukrainian Borscht</a></li>
-        <li><a href="./recipes/guacamole.html">The perfect breakfast starter</a></li>
-        <li><a href="./recipes/margarita.html">And if you're in a mood to be tipsy</a></li>
-    </ul>
+    <div class="recipe_list">
+        <ul style="list-style: none;" >
+            <div class="recipe" id="borscht">
+                <img src="./recipe-images/borscht-1200.jpg" width="auto" height="350px">
+                <li><a href="./recipes/borscht.html">A real Ukrainian Borscht</a></li>
+            </div>
+
+            <div class="recipe" id="guacamole">
+                <img src="./recipe-images/guacamole.jpg" width="auto" height="350px">
+                <li><a href="./recipes/guacamole.html">The perfect breakfast starter</a></li>
+            </div>
+
+            <div class="recipe" id="margarita">
+                <img src="./recipe-images/margarita.jpg" width="auto" height="350px">
+                <li><a href="./recipes/margarita.html">And if you're in a mood to be tipsy</a></li>
+            </div>
+        </ul>
+    </div>
     
 </body>
 </html>

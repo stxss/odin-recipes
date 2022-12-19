@@ -1,3 +1,48 @@
+html {
+    height: 100%
+}
+
+body {
+    font-family: "Gloria Hallelujah", sans-serif;
+}
+
 h1 {
     text-align: center;
+    font-size: 48px;
 }
+
+.recipe_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.recipe {
+    flex-direction: column;
+    display: flex;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    width: 400px;
+    text-align: center;
+
+}
+
+/* #borscht {
+    text-align: left;
+    
+}
+
+#guacamole {
+    text-align: center;
+}
+
+#margarita {
+    text-align: right;
+} */
