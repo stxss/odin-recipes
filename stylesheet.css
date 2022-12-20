@@ -1,6 +1,6 @@
-html {
+/* html {
     height: 100%
-}
+} */
 
 @font-face {
     font-family: "Gilroy-Light";
@@ -62,7 +62,6 @@ ul {
     flex-direction: column;
     display: flex;
     float: left;
-    /* width: 33.33%; */
     padding: 5px;
     gap: 10px;
     align-items: center;
@@ -135,16 +134,19 @@ p {
 }
 
 .description,
+.description_guacamole,
+.description_margarita,
 .ingredients ul,
 .steps  {
     font-family: "Gilroy-Light";
 }
 
+
+
 .individual_image {
     width: auto;
     height: 400px;
-    /* display: block; */
-    margin: 10px auto auto 225px;
+    margin: auto auto auto 0px;
     float: left;
 }
 
@@ -154,10 +156,48 @@ p {
     width: 600px;
     height: 400px;
 
-    margin: 0px 350px 0px 0px;
-    float: right;
-    text-align: left;
+    margin: -435px 350px 0px 360px;
+    float: left;
 }
+
+.description_guacamole {
+    padding: 35px;
+
+    margin: -35px 350px 0px 0px;
+    float: left;
+
+    text-align: left;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description_margarita {
+    padding: 35px;
+
+    margin: -35px 350px 0px 0px;
+    float: left;
+
+    text-align: left;
+    width: 600px;
+    height: 400px;
+
+}
+
+.container {
+    text-align: left;
+    width: 600px;
+    height: 400px;
+}
+
+.centerwrapper {  
+    margin: auto;
+    vertical-align: center;
+    width: 1200px;
+}
+
 
 .ingredients h3,
 .ingredients ul {
@@ -177,7 +217,6 @@ p {
     margin-top: 20px;
 
     padding: 20px;
-    /* width: auto; */
     width: 1800px;
     height: auto;
     
@@ -201,6 +240,7 @@ label.strikethrough {
     display: inline-block;
     margin-bottom: 8px;
     margin-top: 8px;
+    padding: 5px;
 }
 
 input[type=checkbox]:checked + label.strikethrough{
@@ -213,31 +253,137 @@ input[type=checkbox]:checked + label.strikethrough{
 
 .steps{
     text-align: left;
-    float: inline-end;
+    float: left;
     width: 1330px;
     height: 470px;
-    margin-top: -544px;  
+    margin-top: -545px;
+    margin-left: 550px;  
 }
 
 .steps ol {
-    /* width: 1000px; */
     width: 1000px;
     height: 400px;
 
-    padding: 20px;
+    padding: 0px;
 
     margin: 20px 350px 0px 0px;
     text-align: left;
+    display: inline-block;
 }
 
-.box {
+.steps label  {
     display: inline-block;
-    margin-bottom: 8px;
-    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-top: -25px;
+    margin-left: 20px;
+
+    width: 1000px;
+    height: 13px;
+    text-align: left;
+    vertical-align: bottom;
+    align-items: center;
 }
 
-.steps label.strikethrough  {
-    display: inline-block;
+
+.steps input[type=checkbox] {
+    margin: 3px 3px 3px 4px;
+}
+
+.steps li {
     margin-bottom: 8px;
     margin-top: 8px;
+    padding: 5px;
+}
+
+.recipe_bar {
+    height: 80px;
+}
+.recipe_list_other_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 15px;
+    margin-left: 250px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    padding-bottom: 10px;
+
+    width: 1300px;
+    height: 35px;
+    
+    font-size: 20px;
+    text-align: center;
+}
+.list_other_page {
+    width: 1800px;
+    height: 60px;
+    flex-direction: row-reverse;
+}
+.recipe_other_page {
+    flex-direction: column;
+    display: flex;
+    float: left;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    width: 400px;
+    height: 35px;
+    text-align: center;
+    transition: width 2s, height 2s;
+}
+
+.recipe_list_other_page:not(:hover){
+    transform: scale(1,1);
+    transition: all 1s ease-in-out;
+}
+
+#guacamole_other_page.recipe_other_page:hover ~ .recipe_other_page{
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+} 
+
+#borscht_other_page.recipe_other_page:hover ~ .recipe_other_page{
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+} 
+
+#margarita_other_page.recipe_other_page:hover ~ .recipe_other_page{
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+
+}
+
+.recipe_other_page:not(:hover) {
+    transform: scale(1,1);
+    transition: all 0.8s ease-in-out;
+
+} 
+
+#guacamole_other_page.recipe_other_page:hover {
+    transform: scale(1.2,1.2);
+    transition: all 1s ease-in-out;
+    filter: blur(0);
+} 
+
+#borscht_other_page.recipe_other_page:hover {
+    transform: scale(1.2,1.2);
+    transition: all 1s ease-in-out;
+    filter: blur(0);
+} 
+
+#margarita_other_page.recipe_other_page:hover {
+    transform: scale(1.2,1.2);
+    transition: all 1s ease-in-out;
+    filter: blur(0);
+} 
+
+.recipe_list_other_page:hover .recipe_other_page {
+    transform: scale(0.8,0.8);
+    transition: all 1s ease-in-out;
+    filter: blur(8px)
 }
