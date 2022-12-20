@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+    <title>Margarita</title>
 </head>
 <body>
-    <img src="../recipe-images/margarita.jpg" width="450" height="300">
+    <div class="individual_image">
+        <img src="../recipe-images/margarita.jpg" width="450" height="300" class="individual_image">
+    </div>
+    <div class="description">
+        <p>Guacamole is an avocado-based dip or spread that originated in Mexico. It's typically made with mashed avocado and lime juice, then seasoned with salt and cilantro. Guacamole often contains tomatoes and onions.</p>
+    </div>
 
-    <p>Guacamole is an avocado-based dip or spread that originated in Mexico. It's typically made with mashed avocado and lime juice, then seasoned with salt and cilantro. Guacamole often contains tomatoes and onions.</p>
+    <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul style="list-style: none;">        
+            <li><input type="checkbox" id="ing1"><label for="ing1" class="strikethrough">2 cups ice</label></li>
+            <li><input type="checkbox" id="ing2"><label for="ing2" class="strikethrough">2 fluid ounces silver tequila</label></li>
+            <li><input type="checkbox" id="ing3"><label for="ing3" class="strikethrough">¾ fluid ounce triple sec (orange-flavored liqueur</label>)</li>
+            <li><input type="checkbox" id="ing4"><label for="ing4" class="strikethrough">¾ fluid ounce freshly squeezed lime juice</label></li>
+            <li><input type="checkbox" id="ing5"><label for="ing5" class="strikethrough">1 tablespoon coarse salt, or as needed</label></li>
+            <li><input type="checkbox" id="ing6"><label for="ing6" class="strikethrough">1 lime wedge</label></li>
+            <li><input type="checkbox" id="ing7"><label for="ing7" class="strikethrough">3 ounces citrus flavored kombucha, or your favorite flavor</label></li>
+        </ul>
+    </div>
 
-    <h3>Ingredients</h3>
-    <ul>        
-        <li>2 cups ice</li>
-        <li>2 fluid ounces silver tequila        </li>
-        <li>¾ fluid ounce triple sec (orange-flavored liqueur)</li>
-        <li>¾ fluid ounce freshly squeezed lime juice</li>
-        <li>1 tablespoon coarse salt, or as needed</li>
-        <li>1 lime wedge</li>
-        <li>3 ounces citrus flavored kombucha, or your favorite flavor</li>
-    </ul>
-
-    <h3>Steps</h3>
-    <ol>
-        <li>Fill a cocktail shaker half-full with ice. Add tequila, triple sec, and lime juice to the shaker. Seal and shake vigorously until outside is frosted, 10 to 15 seconds.</li>
-        <li>Sprinkle salt onto a plate. Moisten the rim of a glass with the lime wedge. Press the moistened rim into the salt. Fill glass with ice.</li>
-        <li>Strain margarita into the glass and top with kombucha. Stir gently and garnish with lime wedge, if desired.</li>
-    </ol>
+    <div class="steps">
+        <h3>Steps</h3>
+        <ol style="list-style: none;">
+            <li><input type="checkbox" id="step1"><label for="step1" class="strikethrough">Fill a cocktail shaker half-full with ice. Add tequila, triple sec, and lime juice to the shaker. Seal and shake vigorously until outside is frosted, 10 to 15 seconds.</label></li>
+            <li><input type="checkbox" id="step2"><label for="step2" class="strikethrough">Sprinkle salt onto a plate. Moisten the rim of a glass with the lime wedge. Press the moistened rim into the salt. Fill glass with ice.</label></li>
+            <li><input type="checkbox" id="step3"><label for="step3" class="strikethrough">Strain margarita into the glass and top with kombucha. Stir gently and garnish with lime wedge, if desired.</label></li>
+        </ol>
+    </div>
 
 </body>
 </html>
