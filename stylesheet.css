@@ -10,13 +10,13 @@
 
 body {
     font-family: "Gloria Hallelujah", "Gilroy-Light", "Gilroy-ExtraBold" sans-serif;
+    width: 100%;
 }
 
 h1 {
     font-family: "Gloria Hallelujah";
     text-align: center;
     font-size: 48px;
-
 }
 
 ul {
