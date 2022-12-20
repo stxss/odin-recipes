@@ -226,7 +226,7 @@ p {
 }
 
 .ingredients ul {
-    width: 455px;
+    width: 460px;
     height: 400px;
 
     padding: 20px;
@@ -322,7 +322,7 @@ input[type=checkbox]:checked + label.strikethrough{
 .list_other_page {
     width: 1800px;
     height: 60px;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 .recipe_other_page {
     flex-direction: column;
